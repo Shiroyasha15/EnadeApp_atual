@@ -1,0 +1,23 @@
+<ion-header class="s">
+  <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    <ion-title>Dashbord</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item><p id="pontos_header"><img id="img_ouro" src="/assets/imgs/ouro.png" alt="">500 PONTOS</p></ion-item>
+    <img id="img_enade" src="/assets/imgs/enadeee.png" alt="">
+
+    <ion-item><h5>Simulados realizados</h5></ion-item>
+
+
+    <ion-tabs selectedIndex="2">
+        <ion-tab [root]="tab1Root"></ion-tab>
+        <ion-tab [root]="tab2Root"></ion-tab>
+        <ion-tab [root]="tab3Root"></ion-tab>
+      </ion-tabs>
+
+</ion-content>
