@@ -13,6 +13,14 @@
 
     <ion-item><h5>Simulados realizados</h5></ion-item>
 
+    <ion-item>
+      <ion-label>Selecionar</ion-label>
+      <ion-select [(ngModel)]="toppings" multiple="true">
+        <ion-option>Éitica</ion-option>
+        <ion-option>Economia</ion-option>
+      </ion-select>
+    </ion-item>
+
 
     <ion-tabs selectedIndex="2">
         <ion-tab [root]="tab1Root"></ion-tab>
