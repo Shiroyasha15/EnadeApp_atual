@@ -1,0 +1,38 @@
+<ion-header>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div>
+    <h1>Enade</h1>
+  </div>
+
+  <div>
+    <img src="" alt="">
+  </div>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>e-mail</ion-label>
+      <ion-input type="text" #username></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>senha</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+
+  </ion-list>
+  <div>
+    <button ion-button block color="secondary" round (click)="login()">Entrar</button>
+    <button ion-button block round (click)="registrar()">Registrar</button>
+  </div>
+
+  <div (click)="esqueceuSenha()">
+    <p>Esqueceu a senha?</p>
+  </div>
+</ion-content>
+
+
